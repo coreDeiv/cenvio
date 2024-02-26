@@ -4,6 +4,7 @@
   <title>CENVIO</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
   <style>
     *, body, html {
       margin: 0;
@@ -32,7 +33,7 @@
       text-align: right;
     }
     span.brand {
-      color: #53a548;
+      color: #81cf01;
     }
     span.quote {
       font-size: .75rem;
@@ -48,24 +49,50 @@
       line-height: 3rem;
       text-align: center;
       letter-spacing: -2px;
+      position: relative;
     }
-    sup {
-      margin: 0;
-      padding: 5px 7px;
+    h2 span {
       position: absolute;
       top: 90%;
-      left: 50%;
+      left: 65%;
       transform: translate(-50%, -50%);
+      font-size: .65rem !important;
+      line-height: .65rem !important;
+      font-style: normal;
+      letter-spacing: normal;
+      font-weight: bold;
+    }
+    .coredeiv {
+      margin: 0;
+      padding: 5px 7px;
       border: 1px solid rgba(0,0,0,.5);
       border-radius: 10px;
+      font-size: 0.5rem;
+      line-height: 0.5rem;
     }
-    sup, sup strong, sup strong a {
-      margin-top: 1rem;
+    .coredeiv, .coredeiv strong, .coredeiv strong a {
       font-size: 0.5rem;
       line-height: 0.5rem;
       text-transform: none;
       text-decoration: none;
       color: #000000;
+      text-decoration: none;
+    }
+    .rights, .rights p {
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      min-width: 100%;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.5rem;
+      line-height: 0.5rem;
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   </style>
 </head>
@@ -74,7 +101,9 @@
       <span class="brand">C</span>ENVIO<span class="brand">.COM</span><br>
       <span class="quote"><i>Luis Adolfo Villareal & Co</i></span>
     </h1>
-    <h2>"LOS GRANDES RESULTADOS, REQUIEREN GRANDES AMBICIONES"</h2>
-    <sup>by <strong><a href="https://github.com/coreDeiv/">Coredeiv</a></strong></sup>
+    <h2>"LOS GRANDES RESULTADOS, REQUIEREN GRANDES AMBICIONES" <span>Heraclito</span></h2>
+    <div class="rights">
+      <p>All copy rights Reserved ©  GNU General Public License V3<span class="coredeiv">by <strong><a href="https://github.com/coreDeiv/">Coredeiv</a></strong></span></p>
+    </div>
   </body>
 </html>
