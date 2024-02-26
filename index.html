@@ -16,13 +16,13 @@
     }
     body {
       width: 100%;
-      height: auto;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       position: relative;
+      overflow: hidden;
     }
     h1 {
       text-align: center;
@@ -31,6 +31,15 @@
       font-size: 3rem;
       width: 35%;
       text-align: right;
+    }
+    @media screen and (max-width: 650px) {
+      h1, h1 span.brand {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        font-style: italic;
+      } 
     }
     span.brand {
       color: #81cf01;
@@ -51,6 +60,15 @@
       letter-spacing: -2px;
       position: relative;
     }
+
+    @media screen and (max-width: 650px) {
+      h2 {
+        width: 100%;
+        max-width: 95%;
+        font-size: 10vw;
+      }
+    }
+
     h2 span {
       position: absolute;
       top: 90%;
